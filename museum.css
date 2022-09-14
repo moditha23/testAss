@@ -1,0 +1,200 @@
+/*Header section*/
+#header{
+    background-image: url(./images/GettyImages-546160695_full.avif);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#header:after{
+    content: '';
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index:-1 ;
+}
+
+#header .header{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+
+}
+
+#header h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 2.5s ease forwards;
+    animation-delay: 1s;
+}
+
+#header h1 :nth-child(1){
+    animation-delay: 1S;
+}
+
+#header h2{
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 3s ease forwards;
+    animation-delay: 1.5s;
+}
+
+#header h2:nth-child(2){
+    animation-delay: 2s;
+}
+
+#header h2 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(179, 132, 13);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+
+
+#header h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(179, 132, 13);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+
+#header .cta{
+    display:inline-block ;
+    padding: 10px 30px;
+    color: rgb(179, 132, 13);
+    background-color: transparent;
+    border: 2px solid rgb(179, 132, 13);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 30px;
+    transition: 0.3s ease ;
+    transition-property: background-color, color;
+}
+
+#header .cta:hover{
+    color: white;
+    background-color: rgb(179, 132, 13);
+
+}
+/*End of header section*/
+
+/*testimonials*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.testimonials span{
+    color: rgb(105, 77, 8);
+}
+
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    cursor: pointer;
+    display: flex;
+    font-style: 1rem;
+
+}
+
+.testimonial-col{
+    height: 80px;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+
+.zxc{
+    font-size: 1.5rem;
+}
+
+@media(max-width:700px){
+   .zxc{ font-size: 0.6rem;
+    
+}
+
+    .testimonial-col{
+        width: 300px;
+        margin-left: -40px;
+    }
+}
+
+
+/*end testimonials*/
+
+
+
+/*media quaries*/
+
+@media(max-width:700px){
+    .ceylon-bottom{
+        width: 500px;
+    }
+
+    .ceylon-item{
+        width: 500px;
+    }
+    
+}
+
+@media(max-width:700px){
+    .ceylon-top{
+        margin-left: 50px;
+      
+        letter-spacing: 0;
+    }
+}
+
+@media(max-width:700px){
+    .ceylon-top{
+        width: 450px;
+    }
+}
+
+@media(max-width:700px){
+
+}
+
+@media(max-width:700px){
+    #mus1{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media(max-width:700px){
+    #mus2{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/*end 
+
+media quaries*/
